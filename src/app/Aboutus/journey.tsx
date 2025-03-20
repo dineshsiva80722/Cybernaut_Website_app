@@ -5,14 +5,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { Calendar, ArrowRight } from 'lucide-react';
-import ImageSlider from '@/app/Home/Mobile-Components/boldMobile';
-import Club from '@/app/Home/assets/journy/club.png'
-import Award from '@/app/Home/assets/journy/award.png'
-import company from '@/app/Home/assets/journy/company.png'
-import ourRach from '@/app/Home/assets/journy/ourReach.png'
-import Recognition from '@/app/Home/assets/journy/recognition.png'
-import TechCommunity from '@/app/Home/assets/journy/techcommunity.png'
-import AngnelEvent from '@/app/Home/assets/All/Images/whatsapp/2025.jpg'
 import { StaticImageData } from 'next/image';
 
 interface BlogCardProps {
@@ -55,12 +47,12 @@ const timelineContent: {
   '2021': {
     cards: [
       {
-        image: Club,
+        image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742451517/club_var5za.png",
         title: 'Beginning as a Club',
         description: 'Cybernaut started as a college club by a visionary and two tech enthusiasts, mentoring SRM students, growing into a thriving community.',
       },
       {
-        image: TechCommunity,
+        image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742451512/techcommunity_gahdpd.png",
         title: 'Developed into a Tech Community',
         description: 'Seeing the gap between education and workforce needs, we grew into a developer community, enriching students learning experiences.',
       },
@@ -69,7 +61,7 @@ const timelineContent: {
   '2022': {
     cards: [
       {
-        image: company,
+        image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742451509/company_fdpnyc.png",
         title: 'Became a Company',
         description: 'Cybernaut has grown into an Edu-tech company, combining theory and practical skills through advanced programs to help learners gain real-world knowledge and succeed.',
       },
@@ -78,7 +70,7 @@ const timelineContent: {
   '2023': {
     cards: [
       {
-        image: Award,
+        image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742451515/award_pkgtaw.png",
         title: 'Awarded Young Entrepreneurship',
         description: 'In 2022, our efforts were recognized with the Young Entrepreneurship Award by SRM, validating our commitment to transforming education.',
       },
@@ -87,7 +79,7 @@ const timelineContent: {
   '2024': {
     cards: [
       {
-        image: Recognition,
+        image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742451514/recognition_p5oiro.png",
         title: 'National Recognition',
         description: 'Our dedication and innovation have earned us MSME, MCA, Startup India, and ISO certifications, showcasing our commitment to quality and excellence.',
       },
@@ -96,7 +88,7 @@ const timelineContent: {
   '2025': {
     cards: [
       {
-        image: AngnelEvent,
+        image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742453360/2025_jaxgkz.jpg",
         title: 'Our Reach',
         description: `We're proud to share that Cybernaut has partnered with SSN College of Engineering as the official UI & UX elective paper & Industrial training partner! `,
       },
@@ -170,9 +162,10 @@ export default function Journey() {
                         {selectedYear}
                       </div>
                       <Image
+                        width={660}
+                        height={300}
                         src={card.image }
                         alt={card.title}
-                        fill
                         className="object-cover"
                       />
                     </div>
@@ -197,14 +190,17 @@ export default function Journey() {
                       <div className="absolute top-2 right-2 bg-white rounded-md px-2 py-1 z-10">
                         {selectedYear}
                       </div>
+
                       <Image
+                        width={1000}
+                        height={300}
                         src={card.image || '/placeholder.svg'}
                         alt={card.title}
-                        fill
-                        className="object-cover"
+                        className="object-fill mx-auto"
                       />
+
                     </div>
-                    <div className="p-6">
+                    <div className="p-6 pt-10">
                       <h3 className="text-2xl font-semibold text-gray-900 mb-2">{card.title}</h3>
                       <p className="text-gray-600">{card.description}</p>
                     </div>

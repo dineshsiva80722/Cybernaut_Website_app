@@ -137,12 +137,8 @@
 
 'use client';
 import React from 'react';
-import { Trophy, Target, Lightbulb } from 'lucide-react';
+import { Trophy, Lightbulb } from 'lucide-react';
 import Image from 'next/image';
-import Mainamge from '@/app/Home/assets/All/Images/whatsapp/CDSE2.jpg'
-import sideimage from '@/app/Home/assets/All/Images/whatsapp/OfficeView.jpg'
-// import Addvideo from '@/app/Home/assets/aboutimages/CybernautAdd.mp4'
-
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useRef } from "react";
 
@@ -200,7 +196,9 @@ function About() {
                         {/* Secondary Image */}
                         <div className="absolute -bottom-8 left-4 w-64 h-64 rounded-[20px] overflow-hidden shadow-lg border-4 border-white">
                             <Image
-                                src={sideimage}
+                                width={500}
+                                height={500}
+                                src="https://res.cloudinary.com/dn60aovto/image/upload/v1742450501/OfficeView_kecvxi.jpg"
                                 alt="Educational workshop"
                                 className="w-full  object-cover"
                             />

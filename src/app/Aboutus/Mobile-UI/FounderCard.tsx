@@ -1,17 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Founder1 from '@/app/Home/assets/All/JS.png'
-import Founder2 from '@/app/Home/assets/Manish.png'
+
 import Image from 'next/image';
 
 const slides = [
     {
-        url: Founder1, // Replace with the actual URL
+        url: "https://res.cloudinary.com/dn60aovto/image/upload/v1742450995/JS_hkszd9.png", // Replace with the actual URL
         title: "Jayasurya",
         Role:"Founder",
         description: "“Jayasurya Gnanavel transforms education, training 2000+ students and making Cybernaut a global leader.”"
     },
     {
-        url: Founder2, // Replace with the actual URL
+        url: "https://res.cloudinary.com/dn60aovto/image/upload/v1742451262/Manish_q6qmq6.png", // Replace with the actual URL
         title: "Manish",
         Role:"Co-Founder",
         description: "“B. Manish Kumar leads Cybernaut, using his design skills to drive innovation and success.”"
@@ -32,7 +31,7 @@ function FounderCard() {
                     prevIndex === slides.length - 1 ? 0 : prevIndex + 1
                 );
             }
-            console.log(Founder1, Founder2);
+        
         }, 5000);
 
         return () => clearInterval(interval);

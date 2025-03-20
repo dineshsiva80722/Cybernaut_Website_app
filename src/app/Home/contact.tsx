@@ -1,11 +1,10 @@
 'use client'
+
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { ArrowRight, GraduationCap } from 'lucide-react';
 import { Dancing_Script } from 'next/font/google';
 import Link from 'next/link';
-import Bgimage from '@/app/Home/assets/coursesBG.png'
-import Image from 'next/image'
+
 const dancingScript = Dancing_Script({ subsets: ['latin'] });
 
 function Contact() {
@@ -51,12 +50,22 @@ function Contact() {
 
     return (
         <>
+        <section className='min-h-80 py-20 w-full'>
+
+            <div className='w-10/12 h-32 mx-auto'>
+                <div className=' text-center leading-relaxed animate-fade-in space-y-1'>
+                    <h1 className='font-bold text-3xl'> Don't just take our word for it,</h1>
+                    <h1 className='text-3xl  text-blue-500 font-bold '>Hear from our students.</h1>
+                    <h1 className='text-md  text-gray-500'>Our student's success stories speak volumes about the quality of our programs and mentorship.</h1>
+                </div>
+            </div>
             <div
                 suppressHydrationWarning
                 id="featurable-b7323408-197d-4e2d-90e8-054cd79c232e"
                 data-featurable-async
                 className='min-h-20 w-full'
             ></div>
+        </section>
             {/* <FeaturableWidget /> */}
             <section className='relative h-[40rem]  justify-center items-center py-8 md:py-16 px-4 bg-white overflow-hidden'>
                 <div className='relative w-full max-w-6xl mx-auto'>
@@ -111,31 +120,31 @@ function Contact() {
                         <div className='relative w-full lg:w-1/2 p-6 md:p-8 lg:p-12 backdrop-blur-sm rounded-3xl transition-shadow duration-300'>
                             <div className='max-w-md mx-auto space-y-4'>
                                 <div className="space-y-2">
-                                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">Subscribe to Our Newsletter</h3>
-                                <p className="text-gray-600 md:text-lg">Stay updated with our latest courses and opportunities</p>
+                                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">Subscribe to Our Newsletter</h3>
+                                    <p className="text-gray-600 md:text-lg">Stay updated with our latest courses and opportunities</p>
                                 </div>
                                 <form onSubmit={handleSubmit} className="space-y-4">
 
-                                                <div className="relative group">
-                                                    <input
-                                                        type="email"
-                                                        value={email}
-                                                        onChange={(e) => setEmail(e.target.value)}
-                                                        placeholder="Enter your email"
-                                                        className="w-full px-6 py-4 rounded-xl bg-white/80 border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 outline-none text-base md:text-lg group-hover:border-blue-300"
-                                                        required
-                                                    />
-                                                </div>
+                                    <div className="relative group">
+                                        <input
+                                            type="email"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            placeholder="Enter your email"
+                                            className="w-full px-6 py-4 rounded-xl bg-white/80 border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 outline-none text-base md:text-lg group-hover:border-blue-300"
+                                            required
+                                        />
+                                    </div>
 
-                                                <button
-                                                    type="submit"
-                                                    disabled={isLoading}
-                                                    className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-4 px-6 rounded-xl transition-all duration-200 transform hover:scale-[1.02] hover:shadow-lg flex items-center justify-center gap-2 text-base md:text-lg"
-                                                >
-                                                    {isLoading ? 'Sending...' : 'Subscribe Now'}
-                                                </button>
+                                    <button
+                                        type="submit"
+                                        disabled={isLoading}
+                                        className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium py-4 px-6 rounded-xl transition-all duration-200 transform hover:scale-[1.02] hover:shadow-lg flex items-center justify-center gap-2 text-base md:text-lg"
+                                    >
+                                        {isLoading ? 'Sending...' : 'Subscribe Now'}
+                                    </button>
 
-                                            </form>
+                                </form>
 
 
                                 <p className="text-sm md:text-base text-gray-500 text-center">

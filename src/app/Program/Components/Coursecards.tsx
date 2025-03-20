@@ -14,7 +14,7 @@ const courseList = [
     {
         id: 1,
         title: "Tech Trio",
-        icon: Techtrio,
+        icon: "https://res.cloudinary.com/dn60aovto/image/upload/v1742448913/Tech_trio_avv3ny.png",
         Duriation: "60+ Hours",
         Language: "Tamil",
         Role: "Internship",
@@ -28,7 +28,7 @@ const courseList = [
     {
         id: 2,
         title: "MetaZen",
-        icon: MetaZen,
+        icon: "https://res.cloudinary.com/dn60aovto/image/upload/v1742448914/Metazen_bvsqdi.png",
         Duriation: "60+ Hours",
         Language: "Tamil",
         Role: "Internship",
@@ -42,7 +42,7 @@ const courseList = [
     {
         id: 3,
         title: "UI & UX Design",
-        icon: UIUX,
+        icon: "https://res.cloudinary.com/dn60aovto/image/upload/v1742448913/ux_xfzu2m.png",
         Duriation: "60+ Hours",
         Language: "Tamil",
         Role: "Internship",
@@ -56,7 +56,7 @@ const courseList = [
     {
         id: 4,
         title: "Full Stack Development",
-        icon: FullStack,
+        icon: "https://res.cloudinary.com/dn60aovto/image/upload/v1742448916/Full_Stack_pwfclb.png",
         Duriation: "60+ Hours",
         Language: "Tamil",
         Role: "Internship",
@@ -303,6 +303,8 @@ function CourseCard({ item }: { item: CourseItem  }) {
             {/* Image container with aspect ratio */}
             <div className="relative w-full pt-[56%]">
                 <Image
+                width={500}
+                height={500}
                     src={item.icon}
                     alt={item.title}
                     className="absolute top-0 left-0 w-full h-full object-cover"

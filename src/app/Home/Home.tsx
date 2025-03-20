@@ -3,37 +3,14 @@ import { gsap } from 'gsap';
 import Image from 'next/image';
 import Slider from "react-slick";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Image0 from './assets/Gallary/teaching2.jpg';
-import Image1 from './assets/All/Images/Heroimages/Herosection1.jpg';
-import Image2 from './assets/All/Images/Heroimages/Herosection2.jpg';
-import Image3 from './assets/All/Images/Heroimages/Herosection4.jpg';
-import Image4 from './assets/All/Images/Heroimages/herosection5.jpg';
-import Image5 from './assets/All/Images/Heroimages/Herosection6.jpg';
-import Image6 from './assets/All/Images/Heroimages/Herosection7.jpg';
-import Image7 from './assets/All/Images/MOU/Mou_2.png';
-import Image8 from './assets/All/Images/MOU/Mou_4.png';
-import Image9 from './assets/All/Images/MOU/Mou_11.png';
 import Link from 'next/link';
-import Community1 from './assets/All/Images/whatsapp/Community4.jpg'
-import Community2 from './assets/All/Images/whatsapp/Communit3.jpg'
-import Community3 from './assets/All/Images/whatsapp/community2.jpg'
-import Community4 from './assets/All/Images/whatsapp/Community1.jpg'
 import { StaticImageData } from 'next/image';
-
-import JSAnna from './assets/All/JS.png';
 import Founder from '@/app/Home/Mobile-Components/Founder_img';
 import AnimatedTooltip from '@/components/ui/animated-tooltip'
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import './css/MOU.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// thumbnail Images
-
-import Bhrani from '@/app/Home/assets/thumnail images/Bharanik.png'
-import Mohan from '@/app/Home/assets/thumnail images/Motta.png'
-import Jaliyan from '@/app/Home/assets/thumnail images/ChALIYAN.png'
-import Dinesh from '@/app/Home/assets/thumnail images/Dinrsh.png'
 
 
 
@@ -103,20 +80,20 @@ function HeroIllustration() {
     };
 
     const sliderImages = [
-        Image0,
-        Image1,
-        Image2,
-        Image3,
-        Image4,
-        Image5,
-        Image6,
-        Image7,
-        Image8,
-        Image9,
-        Community1,
-        Community2,
-        Community3,
-        Community4
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742388576/teaching2_cbsc8b.jpg',
+       'https://res.cloudinary.com/dn60aovto/image/upload/v1742386630/Herosection1_ixcwp8.jpg',
+       'https://res.cloudinary.com/dn60aovto/image/upload/v1742386630/Herosection2_pg9smu.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386631/Herosection4_fpza5i.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386632/herosection5_bycxql.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386632/Herosection6_zicjax.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386631/Herosection4_fpza5i.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386630/Mou_2_oxpf57.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386631/Mou_4_jemwd3.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386635/Mou_11_irulgg.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386630/Community4_uropla.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386629/Communit3_pev1so.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386630/community2_nu8zpz.jpg',
+        'https://res.cloudinary.com/dn60aovto/image/upload/v1742386634/Community1_sbfhwy.jpg'
     ];
 
     const getImageSrc = () => {
@@ -300,25 +277,25 @@ export default function Home() {
             id: 1,
             name: "N.R.Bharani Dharan",
             designation: "Grapic Designer",
-            image: Bhrani
+            image: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742386633/Bharanik_lkp0mm.png'
         },
         {
             id: 2,
             name: "Mohan",
             designation: "Data Analyst",
-            image: Mohan
+            image: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742386634/Motta_sbzvjc.png'
         },
         {
             id: 3,
             name: "Dinesh",
             designation: "Web Developer",
-            image: Dinesh
+            image: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742386634/Dinrsh_gnoytj.png'
         },
         {
             id: 4,
             name: "Chezhaiyan",
             designation: "Web Developer",
-            image: Jaliyan
+            image: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742386633/ChALIYAN_ahfzsr.png'
         }
 
     ];
@@ -520,7 +497,7 @@ export default function Home() {
                     <div className="w-80   absolute border-2 overflow-hidden border-sky-300 mx-auto rounded-xl bg-white">
                         <div className='relative '>
                             <Image
-                                src={JSAnna}
+                                src="https://res.cloudinary.com/dn60aovto/image/upload/v1742386632/JS_fp6d5p.png"
                                 alt="Founder"
                                 width={100}
                                 height={100}

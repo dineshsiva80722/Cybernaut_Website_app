@@ -62,6 +62,7 @@ const page = () => {
       <Ratings />
       <MOU />
       <What />
+      {/* ================ */}
       <Recognition />
       <Gallery />
       <OnOfline />

@@ -1,49 +1,39 @@
 'use client';
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-// import CDSCImg1 from '@/app/Home/assets/All/Images/whatsapp/CDSC1.jpg';
-import Vision from '@/app/Home/assets/All/Images/whatsapp/CDSE2.jpg';
-import Mission from '@/app/Home/assets/All/Images/whatsapp/Mission.jpg';
-import Activities from '@/app/Home/assets/All/Images/whatsapp/Activities.jpg';
-import defulatiamges from '@/app/Home/assets/All/Images/whatsapp/Conference View 01.jpg';
 import Image from 'next/image';
-import { StaticImageData } from 'next/image';
 
 
-// Define section type for better type safety
 type SectionType = 'vision' | 'mission' | 'activities';
 
 
 function vision() {
-  // State to track which section is open (only one at a time)
-  const [openSection, setOpenSection] = useState<SectionType>('vision'); // Vision open by default
+  const [openSection, setOpenSection] = useState<SectionType>('vision'); 
 
-  // Toggle section visibility
   const toggleSection = (section: SectionType) => {
-    setOpenSection(section === openSection ? section : section); // Keep open if clicking the same, otherwise open the new one
+    setOpenSection(section === openSection ? section : section); 
   };
 
-  // Get the appropriate image and title based on the open section
   const getSectionImage = () => {
     switch (openSection) {
       case 'vision':
         return {
-          url: Vision,
+          url: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742449979/CDSE2_mokoow.jpg',
           title: "OUR VISION"
         };
       case 'mission':
         return {
-          url: Mission,
+          url: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742449991/Mission_f4gns0.jpg',
           title: "OUR MISSION"
         };
       case 'activities':
         return {
-          url: Activities,
+          url: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742450002/Activities_tjmsge.jpg',
           title: "CORE ACTIVITIES"
         };
       default:
         return {
-          url: defulatiamges,
+          url: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742449979/CDSE2_mokoow.jpg',
           title: "OUR VISION"
         };
     }
@@ -157,6 +147,8 @@ function vision() {
       <div className="w-full md:w-1/2 md:h-[32rem]  relative">
         <div className="relative  md:h-full rounded-xl overflow-hidden shadow-xl">
           <Image
+            width={1000}
+            height={1000}
             src={currentImage.url}
             alt="Students collaborating"
             className="w-full h-full object-cover transition-all duration-700 ease-in-out transform hover:scale-105"

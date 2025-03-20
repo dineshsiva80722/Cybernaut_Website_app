@@ -1,34 +1,30 @@
 import React from 'react';
 import { MonitorPlay, LineChart } from 'lucide-react';
-import Fullprohject1 from '@/app/Home/assets/All/Desktop/Full Stack Projects/AI-Powered Task Management App.jpg'
-import Fullprohject2 from '@/app/Home/assets/All/Desktop/Full Stack Projects/Personalized E-Learning Platform.jpg'
-import Fullprohject3 from '@/app/Home/assets/All/Desktop/Full Stack Projects/Real-Time Collaborative Whiteboard.jpg'
-import Fullprohject4 from '@/app/Home/assets/All/Desktop/Full Stack Projects/Smart Online Booking System.jpg'
 import Image from 'next/image'
 function App() {
   const projects = [
     {
       title: "AI-Powered Task Management App",
       type: "EERN STACK",
-      image: Fullprohject1,
+      image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742461918/AI-Powered_Task_Management_App_z8laqi.jpg",
       icon: <MonitorPlay className="w-5 h-5" />
     },
     {
       title: "Personalized E-Learning Platform",
       type: "MEAN STACK",
-      image: Fullprohject2,
+      image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742461360/AI-Powered_Job_Recommendation_Platform_b0mhef.jpg",
       icon: <MonitorPlay className="w-5 h-5" />
     },
     {
       title: "Real-Time Collaborative Whiteboard",
       type: "DJANGO & REACT",
-      image: Fullprohject3,
+      image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742461916/Personalized_E-Learning_Platform_zp63a7.jpg",
       icon: <MonitorPlay className="w-5 h-5" />
     },
     {
       title: "Smart Online Booking System",
       type: "SPRING BOOT & REACT",
-      image: Fullprohject4,
+      image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742460816/Dynamic_Traffic_Management_System_zqa0me.jpg",
       icon: <LineChart className="w-5 h-5" />
     }
   ];
@@ -51,6 +47,8 @@ function App() {
             <div key={index} className="group relative rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl">
               <div className="aspect-[16/9] w-full">
                 <Image 
+                  width={1000}
+                  height={500}
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"

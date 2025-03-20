@@ -103,7 +103,7 @@
 'use client';
 
 import React from 'react';
-import Logo from './assets/footerlogo.png';
+
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { Facebook, Linkedin, Twitter, Instagram } from 'lucide-react';
@@ -170,7 +170,13 @@ const Footer = () => {
       <div className='bg-[#2A2A2A] relative min-h-[25rem] md:w-full p-2 mx-auto xl:container'>
         <div className='md:flex justify-around gap-5 py-4 p-10 mt-5'>
           <div className='min-h-40 min-w-60 space-y-10'>
-            <Image src={Logo} alt="Cybernaut Logo" className='w-60 h-16' />
+            <Image 
+             width={100}
+             height={100}
+             src="https://res.cloudinary.com/dn60aovto/image/upload/v1742450216/footerlogo_qrovod.png"
+             alt="Cybernaut Logo"
+             className='w-60 h-16' />
+
             <h3 className='text-white w-full'>
               {footerData.address.line1}<br className='hidden md:block' />
               {footerData.address.line2}<br className='hidden md:block' />

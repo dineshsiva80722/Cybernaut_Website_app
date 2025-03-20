@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import What from '@/app/Home/assets/All/Images/whatsapp/What.jpg'
-import { Button } from '@/components/ui/button';
 import { BookOpen, Briefcase, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { Presentation } from 'lucide-react';
+
 const WhatWeDo = () => {
   return (
     <div className="container mx-auto">
@@ -15,7 +14,9 @@ const WhatWeDo = () => {
           {/* Left side - Image */}
           <div className="w-full md:w-1/2">
             <Image
-              src={What}
+              width={500}
+              height={500}
+              src='https://res.cloudinary.com/dn60aovto/image/upload/v1742391211/What_tu8dmd.jpg'
               alt="Students in a classroom"
               className="w-full h-[35rem] rounded-2xl object-cover shadow-lg transition-transform duration-200"
             />

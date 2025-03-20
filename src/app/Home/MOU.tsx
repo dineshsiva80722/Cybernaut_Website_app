@@ -3,32 +3,14 @@ import Marquee from 'react-fast-marquee'
 import Image from 'next/image'
 import '@/app/Home/css/MOU.css'
 import { StaticImageData } from 'next/image';
-import Mou1 from '@/app/Home/assets/All/College Logo/Collage Logo 01.png';
-import Mou2 from '@/app/Home/assets/All/College Logo/Collage Logo 02.png';
-import Mou3 from '@/app/Home/assets/All/College Logo/Collage Logo 03.png';
-import Mou4 from '@/app/Home/assets/All/College Logo/Collage Logo 04.png';
-import Mou5 from '@/app/Home/assets/All/College Logo/Collage Logo 05.png';
-import Mou6 from '@/app/Home/assets/All/College Logo/Collage Logo 06.png';
-import Mou7 from '@/app/Home/assets/All/College Logo/Collage Logo 07.png';
-import Mou8 from '@/app/Home/assets/All/College Logo/Collage Logo 08.png';
-import Mou9 from '@/app/Home/assets/All/College Logo/Collage Logo 09.png';
 import { Card, CardContent } from "@/components/ui/card";
-// mobile Mou Images
-import Images1 from '@/app/Home/assets/mobileMou/Kings.png';
-import Images2 from '@/app/Home/assets/mobileMou/Gnanamani.png';
-import Images3 from '@/app/Home/assets/mobileMou/Meenakshiclgofeng.png';
-import Images4 from '@/app/Home/assets/mobileMou/Muthukumaran.png';
-import Images5 from '@/app/Home/assets/mobileMou/VLB.png';
-import Images6 from '@/app/Home/assets/mobileMou/Vivekananda womens.png';
-import Images7 from '@/app/Home/assets/mobileMou/pgp.png';
-import Images8 from '@/app/Home/assets/mobileMou/ssn.png';
-import Images9 from '@/app/Home/assets/mobileMou/Kingss.png';
+
 
 
 
 const MOU = () => {
   interface OutreachCardProps {
-    icon: StaticImageData;
+    icon: StaticImageData | string;
     className?: string;
   }
 
@@ -54,26 +36,26 @@ const MOU = () => {
 
 
   const data = [
-    { icon: Mou2 },
-    { icon: Mou1 },
-    { icon: Mou3 },
-    { icon: Mou4 },
-    { icon: Mou5 },
-    { icon: Mou6 },
-    { icon: Mou7 },
-    { icon: Mou8 },
-    { icon: Mou9 },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389929/Collage_Logo_08_u5rmfx.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389929/Collage_Logo_01_pyruag.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389928/Collage_Logo_09_sojdl0.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389927/Collage_Logo_07_iugven.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389926/Collage_Logo_04_ypglck.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389925/Collage_Logo_05_sdzqx2.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389924/Collage_Logo_06_q3d4qf.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389924/Collage_Logo_02_ma5lls.png' },
+    { icon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742389924/Collage_Logo_03_pghsg5.png' },
   ];
   const Mobiledata = [
-    { Mobileicon: Images1 },
-    { Mobileicon: Images2 },
-    { Mobileicon: Images3 },
-    { Mobileicon: Images4 },
-    { Mobileicon: Images5 },
-    { Mobileicon: Images6 },
-    { Mobileicon: Images7 },
-    { Mobileicon: Images8 },
-    { Mobileicon: Images9 },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390110/pgp_dedepb.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390109/VLB_plikss.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390108/Meenakshiclgofeng_tzr3jz.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390107/Muthukumaran_tmuvet.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390106/Vivekananda_womens_b5ddbf.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390105/ssn_bwzwce.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390104/Kings_nloyar.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390103/Kingss_rvmni9.png' },
+    { Mobileicon: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742390102/Gnanamani_plh5hj.png' },
   ];
 
 

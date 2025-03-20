@@ -17,7 +17,6 @@ import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import Numberbox from "./Numberbox"
 import { User, Star, StarHalf, BarChart3 } from 'lucide-react';
-import coursesBG from '@/app/Home/assets/All/Images/Course/Fullstack.png';
 import Contact from '@/app/Home/contact'
 import Footer from '@/app/Home/footer'
 
@@ -179,10 +178,10 @@ const WebDevelopment = () => {
     return (
         <section className=''>
             <section className='mt-[70px]'>
-                <div
-                    className='flex flex-col lg:flex-row justify-between w-full min-h-[569px]'
-                    style={{ backgroundImage: `url(${coursesBG.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                >
+            <div
+                className='flex flex-col lg:flex-row justify-between w-full min-h-[ 569px]'
+                style={{ backgroundImage: `url('https://res.cloudinary.com/dn60aovto/image/upload/v1742460377/Fullstack_kc5hsw.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
                     {/* Left side content */}
                     <div className='w-full lg:w-1/2 flex items-start justify-center p-5 lg:p-24'>
                         <div className='relative lg:-top-10 w-full'>

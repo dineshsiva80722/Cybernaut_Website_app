@@ -5,40 +5,6 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-
-// Outreach IMages
-import Image1 from '@/app/Home/assets/All/Images/Out Reach events Website/1.jpg'
-import Image2 from '@/app/Home/assets/All/Images/Out Reach events Website/2.jpg'
-import Image3 from '@/app/Home/assets/All/Images/Out Reach events Website/3.jpg'
-import Image4 from '@/app/Home/assets/All/Images/Out Reach events Website/4.jpg'
-import Image5 from '@/app/Home/assets/All/Images/Out Reach events Website/5.jpg'
-import Image6 from '@/app/Home/assets/All/Images/Out Reach events Website/6.jpg'
-import Image7 from '@/app/Home/assets/All/Images/Out Reach events Website/7.jpg'
-import Image8 from '@/app/Home/assets/All/Images/Out Reach events Website/8.jpg'
-import Image9 from '@/app/Home/assets/All/Images/Out Reach events Website/9.jpg'
-import Image10 from '@/app/Home/assets/All/Images/Out Reach events Website/10.jpg'
-import Image11 from '@/app/Home/assets/All/Images/Out Reach events Website/11.jpg'
-import Image12 from '@/app/Home/assets/All/Images/Out Reach events Website/12.jpg'
-import Image13 from '@/app/Home/assets/All/Images/Out Reach events Website/13.jpg'
-import Image14 from '@/app/Home/assets/All/Images/Out Reach events Website/14.jpg'
-import Image15 from '@/app/Home/assets/All/Images/Out Reach events Website/15.jpg'
-import Image16 from '@/app/Home/assets/All/Images/Out Reach events Website/16.jpg'
-import Image17 from '@/app/Home/assets/All/Images/Out Reach events Website/17.jpg'
-import Image18 from '@/app/Home/assets/All/Images/Out Reach events Website/18.jpg'
-import Image19 from '@/app/Home/assets/All/Images/Out Reach events Website/19.jpg'
-import Image20 from '@/app/Home/assets/All/Images/Out Reach events Website/20.jpg'
-import Image21 from '@/app/Home/assets/All/Images/Out Reach events Website/21.jpg'
-import Image22 from '@/app/Home/assets/All/Images/Out Reach events Website/22.jpg'
-import Image23 from '@/app/Home/assets/All/Images/Out Reach events Website/23.jpg'
-import Image24 from '@/app/Home/assets/All/Images/Out Reach events Website/24.jpg'
-import Image25 from '@/app/Home/assets/All/Images/Out Reach events Website/25.jpg'
-import Image26 from '@/app/Home/assets/All/Images/Out Reach events Website/26.jpg'
-import Image27 from '@/app/Home/assets/All/Images/Out Reach events Website/27.jpg'
-import Image28 from '@/app/Home/assets/All/Images/Out Reach events Website/28.jpg'
-import Image29 from '@/app/Home/assets/All/Images/Out Reach events Website/29.jpg'
-import Image30 from '@/app/Home/assets/All/Images/Out Reach events Website/30.jpg'
-import Image31 from '@/app/Home/assets/All/Images/Out Reach events Website/31.jpg'
-import Image32 from '@/app/Home/assets/All/Images/Out Reach events Website/32.jpg'
 import { StaticImageData } from 'next/image';
 
 
@@ -63,52 +29,51 @@ const OutreachCard = ({ imageUrl, className }: { imageUrl: string | StaticImageD
 const Outreaches = () => {
   // Temporary placeholder images from Unsplash
   const placeholderImages = [
-    Image1,
-    Image2,
-    Image3,
-    Image4,
-    Image5,
-    Image6,
-    Image7,
-    Image8,
-    Image9,
-    Image10,
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455630/25_zz0bjf.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455620/24_sw2aiy.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455618/26_qerppp.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455434/27_bqtmg7.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455432/23_vmqr9e.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455430/22_t6naya.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455428/21_eikhrs.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455425/20_w8e4wo.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455423/19_yaqzbo.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455421/18_mhxhhj.jpg",
     
 
 
 
   ];
   const placeholderImagesrow1 =[
-    Image11,
-    Image12,
-    Image13,
-    Image14,
-    Image15,
-    Image16,
-    Image17,
-    Image18,
-    Image19,
-    Image20,
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455419/17_czsizo.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455417/16_ujderi.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455415/15_ylloii.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455413/14_dc5wrt.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455410/13_pr8yqn.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455409/12_wysddy.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455407/11_yi3ozj.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455404/10_jkktdm.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455402/9_y17tkp.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455400/8_xjdepz.jpg",
 
   ]
   const placeholderImagesrow2=[
-    Image21,
-    Image22,
-    Image23,
-    Image24,
-    Image25,
-    Image26,
-    Image27,
-    Image28,
-    Image29,
-    Image30,
-    Image31,
-    Image32,
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455397/7_l9blpo.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455397/6_a7dwqm.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742455395/5_nu5gyk.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454982/4_ndfs4c.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454980/2_qigetm.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454934/1_jfvjr8.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454933/32_otixbk.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454931/31_yqp6io.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454929/29_vxsi9s.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454929/30_xfylqd.jpg",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742454928/28_aeroxc.jpg",
     
   ]
 
   return (
-    <section className="relative h-[42rem] bg-zinc-800 overflow-hidden">
+    <section className="relative h-[42rem] bg-zinc-800 my-20 overflow-hidden">
       {/* Gradient overlays for smooth transitions */}
       <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-zinc-800 to-transparent z-10"></div>
       <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-zinc-800 to-transparent z-10"></div>

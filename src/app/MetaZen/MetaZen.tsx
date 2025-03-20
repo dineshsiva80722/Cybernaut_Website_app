@@ -16,7 +16,6 @@ import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 // import Numberbox from "./Numberbox"
 import { User, Star, StarHalf, BarChart3 } from 'lucide-react';
-import coursesBG from '@/app/Home/assets/All/Images/Course/Fullstack.png';
 import Contact from '@/app/Home/contact'
 import Footer from '@/app/Home/footer'
 import { ChevronDown } from 'lucide-react';
@@ -28,12 +27,6 @@ import { Code2, Network } from 'lucide-react';
 import { MonitorPlay, LineChart } from 'lucide-react';
 import { ArrowRight, GraduationCap } from 'lucide-react';
 import { Dancing_Script } from 'next/font/google';
-import Bgimage from '@/app/Home/assets/coursesBG.png'
-
-import Metaprojects1 from '@/app/Home/assets/All/Desktop/MetaZEN/AI-Powered Resume Builder.jpg'
-import Metaprojects2 from '@/app/Home/assets/All/Desktop/MetaZEN/Adaptive AI Assistant.jpg'
-import Metaprojects3 from '@/app/Home/assets/All/Desktop/MetaZEN/Dynamic Traffic Management System.jpg'
-import Metaprojects4 from '@/app/Home/assets/All/Desktop/MetaZEN/Fraud Detection in Transactions.jpg'
 
 
 
@@ -283,25 +276,25 @@ const Techtrio = () => {
         {
             title: "Dynamic Traffic Management System",
             type: "UI Project",
-            image: Metaprojects1,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742460822/AI-Powered_Resume_Builder_xb2kwx.jpg",
             icon: <MonitorPlay className="w-5 h-5" />
         },
         {
             title: "Recreate Netflix Landing Page",
             type: "UI Project",
-            image: Metaprojects2,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742460819/Adaptive_AI_Assistant_opnsuo.jpg",
             icon: <MonitorPlay className="w-5 h-5" />
         },
         {
             title: "Recreate Netflix Landing Page",
             type: "UI Project",
-            image: Metaprojects3,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742460816/Dynamic_Traffic_Management_System_zqa0me.jpg",
             icon: <MonitorPlay className="w-5 h-5" />
         },
         {
             title: "Create your own Crypto Trading Dashboard",
             type: "UI Project",
-            image: Metaprojects4,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742460819/Fraud_Detection_in_Transactions_nzl2cq.jpg",
             icon: <LineChart className="w-5 h-5" />
         }
     ];
@@ -384,7 +377,7 @@ const Techtrio = () => {
             <section className='mt-[70px]'>
                 <div
                     className='flex flex-col lg:flex-row justify-between w-full min-h-[569px]'
-                    style={{ backgroundImage: `url(${coursesBG.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    style={{ backgroundImage: `url('https://res.cloudinary.com/dn60aovto/image/upload/v1742460976/coursesBG_dpaul6.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
                     {/* Left side content */}
                     <div className='w-full lg:w-1/2 flex items-start justify-center p-5 lg:p-24'>
@@ -804,6 +797,8 @@ const Techtrio = () => {
                                         <div key={index} className="group relative rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl">
                                             <div className="aspect-[16/9] w-full">
                                                 <Image
+                                                    width={1000}
+                                                    height={1000}   
                                                     src={project.image}
                                                     alt={project.title}
                                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"

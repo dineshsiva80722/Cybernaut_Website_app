@@ -295,25 +295,25 @@ const Techtrio = () => {
         {
             title: "AI-Powered Job Recommendation Platform",
             type: "AI Project",
-            image: tecproject1,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742461360/AI-Powered_Job_Recommendation_Platform_b0mhef.jpg",
             icon: <MonitorPlay className="w-5 h-5" />
         },
         {
             title: "Automated Travel Data Extraction & Analysis",
             type: "AI Project",
-            image: tecproject2,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742461360/Automated_Travel_Data_Extraction_Analysis_bq0wuh.jpg",
             icon: <MonitorPlay className="w-5 h-5" />
         },
         {
             title: "Real-Time Fraud Detection System",
             type: "AI Project",
-            image: tecproject3,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742461360/Real-Time_Fraud_Detection_System_lwig1h.jpg",
             icon: <MonitorPlay className="w-5 h-5" />
         },
         {
             title: "Smart AI Chatbot for Businesses",
             type: "AI Project",
-            image: tecproject4,
+            image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742460816/Dynamic_Traffic_Management_System_zqa0me.jpg",
             icon: <LineChart className="w-5 h-5" />
         }
     ];
@@ -394,8 +394,8 @@ const Techtrio = () => {
         <section className=''>
             <section className='mt-[70px]'>
                 <div className='flex flex-col lg:flex-row justify-between w-full min-h-[569px]'
-                    style={{ backgroundImage: `url(${coursesBG.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-
+                    style={{ backgroundImage: `url('https://res.cloudinary.com/dn60aovto/image/upload/v1742460976/coursesBG_dpaul6.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                >
                     {/* Left side content */}
                     <div className='w-full lg:w-1/2 flex items-start justify-center p-5 lg:p-24'>
                         <div className='relative lg:-top-10 w-full'>
@@ -827,6 +827,8 @@ const Techtrio = () => {
                                         <div key={index} className="group relative rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl">
                                             <div className="aspect-[16/9] w-full">
                                                 <Image
+                                                width={1000}
+                                                height={500}
                                                     src={project.image}
                                                     alt={project.title}
                                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -857,7 +859,7 @@ const Techtrio = () => {
                                 <div className="mb-10 items-center justify-center flex">
                                     {/* <p className="text-[#00A3FF] text-center text-muted font-medium ">TESTIMONIALS</p> */}
                                     <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 lg:w-4/12 text-center">
-                                        What Our Clients Love About Us
+                                        What Our Students Love About Us
                                     </h2>
                                 </div>
 

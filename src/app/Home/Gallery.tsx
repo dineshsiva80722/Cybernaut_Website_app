@@ -1,68 +1,38 @@
 'use client';
-
 import Image from 'next/image';
 import React, { useState } from 'react';
-import outreach1 from '@/app/Home/assets/All/Images/Grp Photos/Outreach_1.png';
-import outreach2 from './assets/All/Images/Grp Photos/Outreach2.png';
-import outreach3 from './assets/All/Images/Grp Photos/Outreach3.png';
-import outreach4 from './assets/All/Images/Grp Photos/Outreach4.png';
-import outreach5 from './assets/All/Images/Grp Photos/Outreach_5.jpg';
-import outreach6 from './assets/All/Images/Grp Photos/Outreach6.png';
-import outreach7 from './assets/All/Images/Grp Photos/Outreach7.png';
-import outreach8 from './assets/All/Images/Grp Photos/Outreach8.png';
-import outreach10 from './assets/All/Images/Grp Photos/Outreach10.png';
-import outreach9 from './assets/All/Images/Grp Photos/outreach11.jpg';
-import outreach11 from './assets/All/Images/Grp Photos/outreach13.jpg';
-import outreach12 from './assets/All/Images/Grp Photos/outreach12.jpg';
-import outreach13 from './assets/All/Images/Grp Photos/outreach14.jpg';
-import outreact14 from './assets/All/Images/Grp Photos/outreach15.jpg'
-
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-
-// Mou Images
-import Mou1 from '@/app/Home/assets/All/Images/MOU/SRM.jpg';
-import Mou2 from '@/app/Home/assets/All/Images/MOU/Mou_2.png';
-import Mou3 from '@/app/Home/assets/All/Images/MOU/Mou_4.png';
-import Mou4 from '@/app/Home/assets/All/Images/MOU/Mou_3.png';
-import Mou5 from '@/app/Home/assets/All/Images/MOU/Mou_5.png';
-import Mou6 from '@/app/Home/assets/All/Images/MOU/Mou_6.png';
-import Mou7 from '@/app/Home/assets/All/Images/MOU/Mou_7.png';
-import Mou8 from '@/app/Home/assets/All/Images/MOU/Mou_8.png';
-import Mou9 from '@/app/Home/assets/All/Images/MOU/Mou_9.png';
-import Mou10 from '@/app/Home/assets/All/Images/MOU/Mou_10.png';
-
-
-import gsap from 'gsap';
+ 
 
 const galleryImages = [
-  Mou1,
-  Mou2,
-  Mou3,
-  Mou4,
-  Mou5,
-  Mou6,
-  Mou7,
-  Mou8,
-  Mou9,
-  Mou10
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742447942/SRM_etmb9m.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742447962/Mou_2_bozcfe.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742447983/Mou_4_yuw2uy.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448013/Mou_3_f9v75n.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448032/Mou_5_l7nhrm.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448052/Mou_6_w3rlc1.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448073/Mou_7_vm79ij.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448101/Mou_8_epcyae.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448100/Mou_9_igsnht.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448098/Mou_10_wno0g9.jpg'
+];  
+ 
+const outreachImages  = [
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448505/Outreach_1_lc97mp.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448530/Outreach2_xngh8z.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448566/Outreach3_eqskjk.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448562/Outreach4_msdqmw.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448558/Outreach_5_wgpguu.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448568/Outreach6_pgny4g.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448566/Outreach7_jjwakb.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448559/Outreach8_eh8fys.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448565/outreach11_bdmmvw.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448565/Outreach10_njuoau.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448563/outreach13_det5iq.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448560/outreach12_u2u8ui.jpg',
+  'https://res.cloudinary.com/dn60aovto/image/upload/v1742448563/outreach13_det5iq.jpg',
 ];
-
-const outreachImages = [
-  outreach1,
-  outreach2,
-  outreach3,
-  outreach4,
-  outreach5,
-  outreach6,
-  outreach7,
-  outreach8,
-  outreach9,
-  outreach10,
-  outreach11,
-  outreach12,
-  outreach13,
-];
-
+  
 const imageNames = [
   "SRM Institute Of Science And Technology",
   "Sri Sivasubramaniya Nadar College of Engineering",
@@ -222,6 +192,8 @@ const Gallery = () => {
           {/* Left Image */}
           <div className="w-1/4 lg:block hidden left-3 aspect-[3/4] rounded-lg overflow-hidden shadow-lg relative">
             <Image
+              width={300}
+              height={400}
               src={images[(currentImage - 1 + images.length) % images.length]}
               alt="Previous"
               className="w-full h-full object-cover"
@@ -235,6 +207,8 @@ const Gallery = () => {
           {/* Center Image (Larger) */}
           <div className="lg:w-1/2 w-10/12 aspect-[4/3] rounded-lg overflow-hidden shadow-lg relative">
             <Image
+              width={300}
+              height={400}
               src={images[currentImage]}
               alt="Current"
               className="w-full h-full object-cover"
@@ -248,6 +222,8 @@ const Gallery = () => {
           {/* Right Image */}
           <div className="w-1/4 lg:block right-3 hidden aspect-[3/4] rounded-lg overflow-hidden shadow-lg relative">
             <Image
+              width={300}
+              height={400}
               src={images[(currentImage + 1) % images.length]}
               alt="Next"
               className="w-full h-full object-cover"

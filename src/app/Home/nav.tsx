@@ -39,7 +39,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center">
                         <Image
-                            src="/Logo-Horizontal-Black.png"
+                            src="https://res.cloudinary.com/dn60aovto/image/upload/v1742390286/Logo_f8ucbs.png"
                             width={200}
                             height={50}
                             className="w-32 sm:w-40 lg:w-40"

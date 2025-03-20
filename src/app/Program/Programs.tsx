@@ -5,14 +5,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CourseCards from './Components/Coursecards';
-import Ads1 from '@/app/Home/assets/All/Desktop/Ad banner/Beyond Program.png'
-import Ads2 from '@/app/Home/assets/All/Desktop/Ad banner/Tech Trio.png'
-import Ads3 from '@/app/Home/assets/All/Desktop/Ad banner/ux Program.png'
+
 
 const sliderImages = [
-    Ads1,
-    Ads2,
-    Ads3,
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742456520/Tech_Trio_pyxdnh.png",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742456521/ux_Program_wjhkki.png",
+    "https://res.cloudinary.com/dn60aovto/image/upload/v1742456520/Beyond_Program_nc5pcb.png",
 ]
 
 const Programs = () => {

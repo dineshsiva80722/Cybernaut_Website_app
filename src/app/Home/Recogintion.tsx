@@ -1,36 +1,31 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import MCASVG from './assets/MCA.svg'
-import DPIIT  from '@/app/Home/assets/DPIIT.png';
-import startupindia from "@/app/Home/assets/stqrtupindia.jpg";
-import ISO from "@/app/Home/assets/ISO.png";
-
 
 export default function Recognition() {
     const accreditations = [
         {
             name: "Ministry of Corporate Affairs",
-            logo: MCASVG,
+            logo: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742447782/MCA_pcbwgr.svg',
             alt: "Ministry of Corporate Affairs logo",
         },
         {
             name: "Department for Promotion of Industry and Internal Trade",
-            logo: DPIIT,
+            logo: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742447819/DPIIT_tpe47d.png',
             alt: "DPIIT logo",
         },
         {
             name: "Startup India",
-            logo: startupindia,
+            logo: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742447840/stqrtupindia_hagbxo.png',
             alt: "Startup India logo",
         },
         {
             name: "ISO 9001:2015",
-            logo: ISO,
+            logo: 'https://res.cloudinary.com/dn60aovto/image/upload/v1742447858/ISO_p9sebu.png',
             alt: "ISO 9001:2015 Certified logo",
             
         },
     ];
-  
+
 
 
     return (

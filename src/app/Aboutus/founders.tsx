@@ -2,8 +2,6 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import Manish from '@/app/Home/assets/Manish.png';
-import Js from '@/app/Home/assets/All/JS.png'
 import { Card } from '@/components/ui/card'
 import { useState, useEffect } from 'react';
 import FounderCard from '@/app/Aboutus/Mobile-UI/FounderCard'
@@ -11,42 +9,35 @@ import AnimatedTooltip from '@/components/ui/animated-tooltip'
 import { NumberTicker } from "@/components/magicui/number-ticker";
 import { StaticImageData } from 'next/image';
 
-// thumbnail images
-
-import Bhrani from '@/app/Home/assets/thumnail images/Bharanik.png'
-import Mohan from '@/app/Home/assets/thumnail images/Motta.png'
-import Jaliyan from '@/app/Home/assets/thumnail images/ChALIYAN.png'
-import Dinesh from '@/app/Home/assets/thumnail images/Dinrsh.png'
-
 const people : { id: number; name: string; designation: string; image: string | StaticImageData; }[] = [
   {
     id: 1,
     name: "N.R.Bharani Dharan",
     designation: "Grapic Designer",
-    image: Bhrani
+    image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742386633/Bharanik_lkp0mm.png"
   },
   {
     id: 2,
     name: "Mohan",
     designation: "Data Analyst",
-    image: Mohan
+    image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742386634/Motta_sbzvjc.png"
   },
   {
     id: 3,
     name: "Dinesh",
     designation: "Web Developer",
-    image: Dinesh
+    image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742386634/Dinrsh_gnoytj.png"
   },
   {
     id: 4,
     name: "Chezhaiyan",
     designation: "Web Developer",
-    image: Jaliyan
+    image: "https://res.cloudinary.com/dn60aovto/image/upload/v1742386633/ChALIYAN_ahfzsr.png"
   }
 
 ];
 
-const images = [Js, Manish]; // Array of images
+const images = ["https://res.cloudinary.com/dn60aovto/image/upload/v1742450995/JS_hkszd9.png", "https://res.cloudinary.com/dn60aovto/image/upload/v1742451262/Manish_q6qmq6.png"]; // Array of images
 
 const founders = () => {
 
@@ -75,7 +66,7 @@ const founders = () => {
   return (
     <>
       <div className='hidden'>
-        <h1 className='lg:text-3xl text-2xl font-bold text-center my-2 '>MEET OUR FOUNDERS</h1>
+        <h1 className='lg:text-3xl text-2xl flex items-center  font-bold text-center my-2 '>MEET OUR <span className='text-blue-500'>FOUNDERS</span></h1>
         <p className='lg:text-lg mx-auto my-8 lg:px-[130px] lg:w-11/12 w-10/12 lg:text-center text-start xl:container '>Unlock your potential with our advanced educational tools and top-tier training. Join 10,000+ successful learners and enhance your skills with Tech Trio, Full Stack, UI & UX, and more. Find the perfect program for your career goals today.</p>
         <div>
           <section className=''>
@@ -96,7 +87,9 @@ const founders = () => {
                   <div className="relative w-[300px] h-[354px] transition-all duration-400 hover:scale-110 rounded-lg overflow-hidden">
                     <div className="first-content h-full w-full flex justify-center items-center transition-all duration-400">
                       <Image
-                        src={Js}
+                        width={300}
+                        height={354}
+                        src='https://res.cloudinary.com/dn60aovto/image/upload/v1742450995/JS_hkszd9.png'
                         alt="Profile"
                         className="h-full w-full object-cover"
                       />
@@ -155,7 +148,9 @@ const founders = () => {
                     <div className="relative w-[300px] h-[354px] transition-all duration-400 hover:scale-110 rounded-lg overflow-hidden">
                       <div className="first-content h-full w-full flex justify-center items-center transition-all duration-400">
                         <Image
-                          src={Manish}
+                          width={300}
+                          height={354}
+                          src="https://res.cloudinary.com/dn60aovto/image/upload/v1742451262/Manish_q6qmq6.png"
                           alt="Profile"
                           className="h-full w-full object-cover"
                         />
@@ -223,8 +218,8 @@ const founders = () => {
 
       {/* ================================================================================================================ */}
       <section className='min-h-screen py-20'>
-        <div className='flex flex-col justify-center space-y-5 mx-auto py-10'>
-          <h1 className='text-3xl font-bold text-center uppercase'>Meet Our Founders</h1>
+        <div className='flex flex-col justify-center  space-y-5 mx-auto py-10'>
+          <h1 className='lg:text-3xl text-2xl   text-center  font-bold my-2 gap-2 '>MEET OUR FOUNDERS </h1>
           <p className='text-center max-w-3xl mx-auto'>
             Unlock your potential with our advanced educational tools and top-tier training. Join 10,000+ successful learners and enhance your skills with Tech Trio, Full Stack, UI & UX, and more. Find the perfect program for your career goals today.
           </p>
@@ -274,7 +269,9 @@ const founders = () => {
               <div className='w-80 h-80 bg-blue-200 rounded-[2rem] absolute -right-5 -bottom-1'>
               </div>
               <Image
-                src={Js}
+                width={300}
+                height={354}
+                src="https://res.cloudinary.com/dn60aovto/image/upload/v1742450995/JS_hkszd9.png"
                 alt="Profile"
                 className="rounded-[2rem] w-[30rem] relative z-10 object-cover"
               />
@@ -289,7 +286,9 @@ const founders = () => {
               <div className='w-80 h-80 bg-blue-200 rounded-[2rem] absolute -left-5 -bottom-5'>
               </div>
               <Image
-                src={Manish}
+                width={300}
+                height={354}
+                src="https://res.cloudinary.com/dn60aovto/image/upload/v1742451262/Manish_q6qmq6.png"
                 alt="Profile"
                 className="rounded-[2rem] w-[30rem] h-[30rem] relative z-10 object-cover"
               />
