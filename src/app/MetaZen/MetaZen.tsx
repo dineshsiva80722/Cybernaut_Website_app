@@ -2,21 +2,13 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-// import ThreeCourses from './ThreeCourses';
-// import Keybenifits from './Keybenifits';
-// import Samplecertificate from './Samplecertificate';
-// import StartCourse from './Start-course';
-// import Testimonials from './Testimonials';
 import Fqas from './FQA';
 import gsap from 'gsap';
-// import OurProject from './OurProject';
 import { NumberTicker } from "@/components/magicui/number-ticker";
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
-// import Numberbox from "./Numberbox"
 import { User, Star, StarHalf, BarChart3 } from 'lucide-react';
-import Contact from '@/app/Home/contact'
 import Footer from '@/app/Home/footer'
 import { ChevronDown } from 'lucide-react';
 import { countries } from './countries';
@@ -980,9 +972,7 @@ const Techtrio = () => {
                 }
             `}</style>
                     </div>
-                    <div ref={faqsRef} className="w-ful pt-10 place-content-center">
-                        <Footer />
-                    </div>
+                    
                 </div>
             </section>
 

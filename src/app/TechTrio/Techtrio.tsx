@@ -2,23 +2,13 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-// import ThreeCourses from './ThreeCourses';
-// import Keybenifits from './Keybenifits';
-// import Samplecertificate from './Samplecertificate';
-// import StartCourse from './Start-course';
-// import Testimonials from './Testimonials';
 import Fqas from './FQAs';
 import gsap from 'gsap';
-// import OurProject from './OurProject';
 import { NumberTicker } from "@/components/magicui/number-ticker";
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
-// import Numberbox from "./Numberbox"
 import { User, Star, StarHalf, BarChart3 } from 'lucide-react';
-import coursesBG from '@/app/Home/assets/coursesBG.png';
-import Contact from '@/app/Home/contact'
-import Footer from '@/app/Home/footer'
 import { ChevronDown } from 'lucide-react';
 import { countries } from './countries';
 import { Package } from 'lucide-react';
@@ -28,15 +18,11 @@ import { Code2, Network } from 'lucide-react';
 import { MonitorPlay, LineChart } from 'lucide-react';
 import { ArrowRight, GraduationCap } from 'lucide-react';
 import { Dancing_Script } from 'next/font/google';
-import Bgimage from '@/app/Home/assets/coursesBG.png'
-import tecproject1 from '@/app/Home/assets/All/Desktop/Tech Trio Projects/AI-Powered Job Recommendation Platform.jpg'
-import tecproject2 from '@/app/Home/assets/All/Desktop/Tech Trio Projects/Automated Travel Data Extraction & Analysis.jpg'
-import tecproject3 from '@/app/Home/assets/All/Desktop/Tech Trio Projects/Real-Time Fraud Detection System.jpg'
-import tecproject4 from '@/app/Home/assets/All/Desktop/Tech Trio Projects/Smart AI Chatbot for Businesses.jpg'
+
+
+
 
 const dancingScript = Dancing_Script({ subsets: ['latin'] });
-
-
 const content = {
     courseTitle: 'Tech trio - core coding',
     courseDescription: 'Master C++, Java, and Python with 15+ projects,  earn certificates, gain internship experience, and enhance your resume with free Git/GitHub and soft skills Master Class.',
@@ -895,94 +881,13 @@ const Techtrio = () => {
 
                     <div ref={faqsRef} className="w-ful pt-10 place-content-center">
                         <Fqas />
-                        {/* <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-                            <div className="max-w-7xl mx-auto">
-                                
-                                <div className="text-center mb-16">
-                                    <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                                        Explore Our FAQs
-                                    </h1>
-                                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                                        Find quick answers to commonly asked questions about StudyFlow. Have a question not listed?
-                                    </p>
-                                </div>
-
-                         
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                             
-                                    <div className="bg-white p-6 rounded-lg">
-                                        <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                                            Who is this program for?
-                                        </h2>
-                                        <p className="text-gray-600">
-                                            Students, fresh graduates, and professionals wanting to master coding with hands-on real-world experience.            </p>
-                                    </div>
-
-                                 
-                                    <div className="bg-white p-6 rounded-lg">
-                                        <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                                            Do I need prior coding knowledge?
-
-                                        </h2>
-                                        <p className="text-gray-600">
-                                            No prior experience needed! The program starts from basics and progresses to advanced coding concepts.            </p>
-                                    </div>
-
-                                    <div className="bg-white p-6 rounded-lg">
-                                        <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                                            What certifications will I receive?            </h2>
-                                        <p className="text-gray-600">
-                                            We provide courses in UI/UX design, full-stack development, digital marketing, and more.            </p>
-                                    </div>
-
-                                    <div className="bg-white p-6 rounded-lg">
-                                        <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                                            Will I work on real-world projects?            </h2>
-                                        <p className="text-gray-600">
-                                            Yes! Gain experience with 6 mini projects, 3 capstone projects, and industry-level assignments.            </p>
-                                    </div>
-
-                           
-                                    <div className="bg-white p-6 rounded-lg">
-                                        <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                                            Will I get a certificate?
-                                        </h2>
-                                        <p className="text-gray-600">
-                                            Prepares you for coding challenges, resume building, LinkedIn optimization, and expert career mentorship.            </p>
-                                    </div>
-
-                                    <div className="bg-white p-6 rounded-lg">
-                                        <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                                            How do I enroll?            </h2>
-                                        <p className="text-gray-600">
-                                            Click 'Enroll Now' on the website and complete the registration process to secure your spot.            </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
-
-
 
                     <div ref={faqsRef} className="w-ful pt-10 place-content-center">
                         {/* <Contact /> */}
                         <section className='relative h-[40rem] flex justify-center items-center py-8 md:py-16 px-4 bg-white overflow-hidden my-10'>
                             <div className='relative w-full max-w-6xl mx-auto'>
                                 <div className='relative w-full lg:h-96 flex shadow-md rounded-2xl bg-white flex-col lg:flex-row gap-6 md:gap-8 lg:gap-12 overflow-hidden'>
-                                    {/* Background Image */}
-                                    {/* <div className="absolute inset-0 w-full h-full">
-                            <Image
-                                src={Bgimage}
-                                alt="Background Pattern"
-                                fill
-                                sizes="100vw"
-                                priority
-                                className="w-full h-full object-cover opacity-10"
-                                style={{ objectFit: 'cover' }}
-                            />
-                            <div className="absolute inset-0"></div>
-                        </div> */}
-
                                     {/* Left Section */}
                                     <div className='relative w-full lg:w-1/2 p-6 md:p-8 lg:p-12 rounded-3xl transition-shadow duration-300 '>
                                         <div className='max-w-md mx-auto space-y-6 md:space-y-4  '>

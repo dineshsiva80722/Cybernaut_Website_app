@@ -66,6 +66,20 @@ const courseList = [
         Discount: "₹5000/-",
         button: "Enroll Now",
         category: "online"
+    },
+    {
+        id: 5,
+        title: "Data Analytics",
+        icon: "https://res.cloudinary.com/dn60aovto/image/upload/v1742448916/Full_Stack_pwfclb.png",
+        Duriation: "60+ Hours",
+        Language: "Tamil",
+        Role: "Internship",
+        Enrolled: "10K Enrolled",
+        Rating: "4.8/5.0",
+        Price: "₹3500/-",
+        Discount: "₹5000/-",
+        button: "Enroll Now",
+        category: "online"
     }
 ];
 
