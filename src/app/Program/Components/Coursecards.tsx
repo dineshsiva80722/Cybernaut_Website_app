@@ -70,7 +70,7 @@ const courseList = [
     {
         id: 5,
         title: "Data Analytics",
-        icon: "https://res.cloudinary.com/dn60aovto/image/upload/v1742448916/Full_Stack_pwfclb.png",
+        icon: "https://res.cloudinary.com/dn60aovto/image/upload/v1742448915/DataAnalytics_vnount.png",
         Duriation: "60+ Hours",
         Language: "Tamil",
         Role: "Internship",
